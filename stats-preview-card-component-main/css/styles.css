@@ -33,8 +33,23 @@ p {
     font-size: 15px;
 }
 
+img{
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .container {
     background-color: var(--dark-desaturated-blue);
+    margin: 50px 20px;
+    padding: 0 0 20px;
+    border-radius: 10px;
+}
+
+.card picture img {
+    border-radius: 10px 10px 0 0;
 }
 
 .attribution {
