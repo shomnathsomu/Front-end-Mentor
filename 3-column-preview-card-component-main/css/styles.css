@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* (paragraphs) */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+
+    /* (background, headings, buttons) */
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.container {
+    margin: 50px 20px;
+}
+
+.car {
+    padding: 40px 60px 40px 40px;
+}
+
+.container .car img {
+    margin-bottom: 20px;
+}
+
+.car h2 {
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.car p{
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+}
+
+#sedans {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--Bright-orange);
+}
+
+#suvs {
+    background-color: var(--Dark-cyan);
+}
+
+#luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--Very-light-gray);
+}
+
+.btn-sedans {
+    color: var(--Bright-orange);
+}
+
+.btn-suvs {
+    color: var(--Dark-cyan);
+}
+
+.btn-luxury {
+    color: var(--Very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        margin: 50px 75px;
+    }
+
+    .car {
+        max-width: 300px;
+        padding: 40px;
+    }
+
+    #sedans {
+        border-radius: 10px 0 0 10px;
+    }
+    
+    #luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .btn {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+}
